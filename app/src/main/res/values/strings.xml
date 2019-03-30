@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SchoolCom</string>
+    <string name="action_settings">Settings</string>
+    <string name="detail_location">Detail Location</string>
+    <string name="detail_desc">detail_desc</string>
+    <string name="item_desc">Item Description</string>
+</resources>

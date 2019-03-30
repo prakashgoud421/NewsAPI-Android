@@ -1,0 +1,94 @@
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_image_height"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="5dp"
+            android:background="@color/shimmer_bg_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="@dimen/bootom_margin"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/card_image"
+            >
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/card_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text=""
+                android:textColor="@color/shimmer_bg_color"
+                android:textSize="12sp" />
+            <TextView
+                android:gravity="left"
+                android:background="@color/shimmer_bg_color"
+                android:id="@+id/card_title"
+                android:layout_width="300dp"
+                android:layout_height="15dp"
+                tools:text="@string/item_desc"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/shimmer_bg_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:background="@color/shimmer_bg_color"
+                android:id="@+id/card_desc"
+                android:layout_width="250dp"
+                android:layout_height="15dp"
+                tools:text="@string/item_desc"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:textColor="@color/shimmer_bg_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/action_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="15dp"
+            android:visibility="gone" />
+        <!--ImageButton
+
+            android:id="@+id/share_button"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_share_black_24dp"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:tint="@color/dark_grey"
+            tools:ignore="VectorDrawableCompat" /-->
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="md_keylines">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="height_live_match">150dp</dimen>
+
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">30dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">20dp</dimen>
+    <dimen name="card_image_height">150dp</dimen>
+    <dimen name="article_subheading">14sp</dimen>
+    <dimen name="article_titles">20sp</dimen>
+    <dimen name="bootom_margin">15dp</dimen>
+    <dimen name="height_header">55dp</dimen>
+    <dimen name="swipeheaderup">20dp</dimen>
+    <dimen name="swipeheaderdown">55dp</dimen>
+    <dimen name="back_hieght">40dp</dimen>
+    <dimen name="back_width">40dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="live_t_ad_t_height">12sp</dimen>
+    <dimen name="cattwo_food">120dp</dimen>
+    <dimen name="div_height">50</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+</resources>

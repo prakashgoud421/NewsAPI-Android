@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/newlayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/_red"/>
+            <!--ProgressBar
+                android:id="@+id/gifLoading"
+                android:layout_width="60dp"
+                android:layout_height="300dp"
+                android:visibility="visible"
+                android:padding="160dp"
+
+                /-->
+        </LinearLayout>
+
+    <!--pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifLoading"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/loading_gif"
+        android:padding="130dp"
+
+        /-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_news"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/newlayout"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_allnews" />
+                <include layout="@layout/shimmer_allnews" />
+                <include layout="@layout/shimmer_allnews" />
+
+
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/my_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/md_keylines"
+    android:layout_below="@+id/shimmer_news"
+    android:paddingTop="@dimen/md_keylines"
+    />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:id="@+id/gifLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/_red"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>
